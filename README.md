@@ -17,7 +17,7 @@ Saves results to Excel and logs the process.
 
 Outputs yearly statistics (mean, min, max daily averages).
 
-Built-in error handling and logging via weather_analysis.log.
+Built-in error handling and logging via dailyTemperatureAnalyzer.log.
 
 
 ### How It Works
@@ -40,8 +40,8 @@ project/
 │   ├── 27612.01.05.2010.01.05.2025.1.0.0.ru.utf8.00000000.xls
 │   └── result.xlsx
 │
-├── weather_analysis.py
-├── weather_analysis.log
+├── dailyTemperatureAnalyzer.py
+├── dailyTemperatureAnalyzers.log
 └── README.md
 
 ### Dependencies
@@ -73,7 +73,7 @@ Make sure the Excel file has the expected columns:
 
 
 ### Logging
-All key actions and errors are logged in weather_analysis.log. This includes:
+All key actions and errors are logged in dailyTemperatureAnalyzer.log. This includes:
 
 File loading
 
