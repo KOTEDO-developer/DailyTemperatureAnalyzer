@@ -19,7 +19,7 @@ logging.basicConfig(
 
 """Класс-обработчик ошибок и логов"""
 
-class WeatherAnalyzerErrorHandler:
+class dailyTemperatureAnalyzerErrorHandler:
     @staticmethod
     def handle_error(context: str, exception: Exception):
         logging.error(f"[{context}] Ошибка: {exception}")
@@ -36,13 +36,13 @@ class WeatherAnalyzerErrorHandler:
 """Основная бизнес-логика проекта"""
 
 
-class WeatherAnalyzer:
+class dailyTemperatureAnalyzer:
     def __init__(self, source_file: str, export_file: str):
         self.source_file = source_file
         self.export_file = export_file
         self.dataset = None
         self.summary = None
-        self.logger = WeatherAnalyzerErrorHandler
+        self.logger = dailyTemperatureAnalyzerErrorHandler
 
     def run(self):
         self.logger.info("=== Запуск анализа погодных данных ===")
@@ -178,7 +178,7 @@ def main():
     source_path = r'C:\Users\Иван\PycharmProjects\PythonProject\Project\resources\27612.01.05.2010.01.05.2025.1.0.0.ru.utf8.00000000.xls'
     export_path = r'C:\Users\Иван\PycharmProjects\PythonProject\Project\resources\result.xlsx'
 
-    analyzer = WeatherAnalyzer(source_path, export_path)
+    analyzer = dailyTemperatureAnalyzer(source_path, export_path)
     analyzer.run()
 
 if __name__ == "__main__":
