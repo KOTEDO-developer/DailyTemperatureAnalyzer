@@ -69,9 +69,13 @@ Set input and output paths in main():
 python
 
 source_path = r'C:\path\to\your\weather_file.xls'
+
 export_path = r'C:\path\to\save\weather_results.xlsx'
+
 analyzer = WeatherAnalyzer(source_path, export_path)
+
 analyzer.run()
+
 Make sure the Excel file has the expected columns:
 
 "Местное время в Москве (ВДНХ)"
