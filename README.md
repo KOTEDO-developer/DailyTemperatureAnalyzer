@@ -36,10 +36,10 @@ Log key steps and any warnings/errors.
 
 ### Example Directory Structure
 project/
-├──────────────────────────resources
-|                              ├──── 27612.01.05.2010.01.05.2025.1.0.0.ru.utf8.00000000.xls
-|                              └──── result.xlsx
-|
+├── resources/
+│   ├── 27612.01.05.2010.01.05.2025.1.0.0.ru.utf8.00000000.xls
+│   └── result.xlsx
+│
 ├── weather_analysis.py
 ├── weather_analysis.log
 └── README.md
