@@ -17,7 +17,7 @@ logging.basicConfig(
 )
 
 
-"""Класс-обработчик ошибок и логов"""
+""" Класс-обработчик ошибок и логов """
 
 class dailyTemperatureAnalyzerErrorHandler:
     @staticmethod
@@ -33,7 +33,7 @@ class dailyTemperatureAnalyzerErrorHandler:
         logging.info(message)
 
 
-"""Основная бизнес-логика проекта"""
+""" Основная бизнес-логика проекта """
 
 class dailyTemperatureAnalyzer:
     def __init__(self, source_file: str, export_file: str):
@@ -172,6 +172,8 @@ class dailyTemperatureAnalyzer:
         except Exception as e:
             self.logger.handle_error("Статистика", e)
 
+
+""" Входная точка старта проекта """
 
 def main():
     source_path = r'C:\Users\Иван\PycharmProjects\PythonProject\Project\resources\27612.01.05.2010.01.05.2025.1.0.0.ru.utf8.00000000.xls'
