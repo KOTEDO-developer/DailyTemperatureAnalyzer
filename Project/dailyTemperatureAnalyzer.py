@@ -35,7 +35,6 @@ class dailyTemperatureAnalyzerErrorHandler:
 
 """Основная бизнес-логика проекта"""
 
-
 class dailyTemperatureAnalyzer:
     def __init__(self, source_file: str, export_file: str):
         self.source_file = source_file
