@@ -1,3 +1,7 @@
+Код реализован с использованием одного основного класса dailyTemperatureAnalyzer, содержащего всю бизнес-логику. Также используется вспомогательный статический класс dailyTemperatureAnalyzerErrorHandler для централизованной обработки логов и ошибок. 
+Декомпозиция на модули/подклассы не производилась, поскольку основной фокус был на корректной реализации анализа данных в рамках одного сценария.
+
+
 ### Daily Temperature Analyzer
 Daily Temperature Analyzer is a Python-based tool for parsing, processing, and analyzing weather observation data — specifically focusing on calculating daily average temperatures at fixed daytime hours (09:00, 12:00, 15:00, and 18:00).
 
